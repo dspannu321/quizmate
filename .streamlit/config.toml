@@ -1,0 +1,46 @@
+# QuizMate theme: blue accents on a deep navy dark mode.
+# Only [theme] is defined, so the app always renders in dark mode.
+
+[theme]
+base = "dark"
+primaryColor = "#2563EB"
+backgroundColor = "#0B1220"
+secondaryBackgroundColor = "#141E33"
+codeBackgroundColor = "#141E33"
+textColor = "#E9EFFB"
+linkColor = "#7DB0FF"
+codeTextColor = "#BFD4F5"
+borderColor = "#25344F"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "10px"
+buttonRadius = "10px"
+
+font = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+baseFontSize = 15
+baseFontWeight = 400
+codeFontSize = "13px"
+headingFontSizes = ["30px", "22px", "18px", "16px", "14px", "13px"]
+headingFontWeights = [700, 600, 600, 600, 500, 500]
+linkUnderline = false
+
+blueColor = "#60A5FA"
+greenColor = "#34D399"
+redColor = "#F87171"
+yellowColor = "#FBBF24"
+orangeColor = "#FB923C"
+violetColor = "#A78BFA"
+grayColor = "#94A3B8"
+
+dataframeBorderColor = "#25344F"
+dataframeHeaderBackgroundColor = "#141E33"
+
+[theme.sidebar]
+backgroundColor = "#0A1120"
+secondaryBackgroundColor = "#141E33"
+codeBackgroundColor = "#141E33"
+textColor = "#E9EFFB"
+borderColor = "#25344F"
+primaryColor = "#2563EB"

@@ -21,7 +21,7 @@ load_dotenv()
 
 
 class QuizGenerationError(Exception):
-    """Raised when StudyForge cannot generate a valid quiz."""
+    """Raised when QuizMate cannot generate a valid quiz."""
 
 
 @dataclass

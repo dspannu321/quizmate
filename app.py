@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import streamlit as st
 
 from ai_service import (
@@ -19,13 +21,18 @@ OPTION_LETTERS = ("A", "B", "C", "D")
 COURSE_NAME = "INFO 4330: Data Warehousing & Data Mining (S10)"
 TEAM_MEMBERS = ("Dilawar Singh", "Arvind Lahar", "Anmoldeep Singh")
 
+ASSETS_DIR = Path(__file__).parent / "assets"
+ICON_PATH = str(ASSETS_DIR / "icon.png")
+
 
 st.set_page_config(
     page_title="QuizMate",
-    page_icon=":material/quiz:",
+    page_icon=ICON_PATH,
     layout="centered",
     initial_sidebar_state="collapsed",
 )
+
+st.logo(ICON_PATH, size="large")
 
 
 def initialize_session_state() -> None:
@@ -372,7 +379,11 @@ def display_quiz(result: QuizGenerationResult) -> None:
 initialize_session_state()
 
 st.badge("AI-powered study tool", icon=":material/auto_awesome:", color="blue")
-st.title("QuizMate")
+
+with st.container(horizontal=True, vertical_alignment="center"):
+    st.image(ICON_PATH, width=72)
+    st.title("QuizMate", width="content")
+
 st.caption(
     "Turn your study material into a multiple-choice quiz, "
     "test your knowledge, and review every answer."

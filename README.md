@@ -4,6 +4,8 @@
 
 QuizMate is a Python web application that transforms study material into interactive multiple-choice quizzes using Generative AI. Users can paste their notes or other study content, select the quiz difficulty and number of questions, generate a quiz, attempt it, and receive immediate scoring and explanations.
 
+**Live app:** [https://quizmate.streamlit.app](https://quizmate.streamlit.app)
+
 This project was developed for the **Generative AI Topic Group Project** as part of the Data Warehouse and Data Mining course.
 
 ---
